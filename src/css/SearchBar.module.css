@@ -1,21 +1,78 @@
-.container, .search, .searchBar, .profile {
+.container, .menu, .search, .searchBar, .loop, .mic, .profile, .burger, .camera, .bell {
     display: flex;
 }
 
 .container {
     justify-content: space-between;
+    margin-top: 0.5rem;
+    margin-inline: 1rem;
+}
+
+.burger svg:hover, 
+.menu > svg:hover, 
+.menu span:hover, 
+.loop:hover, 
+.mic:hover, 
+.camera:hover, 
+.bell:hover, 
+.profilePic:hover {
+    cursor: pointer;
+} 
+
+.burger, .camera, .bell {
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.burger:hover, .camera:hover, .bell:hover {
+    background-color: rgb(47, 47, 47);
+}
+
+.menu, .profile, .loop, .mic {
+    align-items: center;
+}
+
+/* menu */
+.burger {
+    margin-right: 1rem;
 }
 
 .menu span {
     color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
 .menu span::after {
     content: 'FR';
+    font-size: 0.6rem;
+    font-weight: normal;
+    position: absolute;
+}
+
+/* search */
+.loop {
+    width: 4rem;
+    justify-content: center;
+    margin-right: 0.5rem;
+    border-radius: 0 20px 20px 0;
 }
 
 .searchBar input {
-    width: 30vw;
+    border-radius: 20px 0 0 20px;
+    padding-left: 1rem;
+}
+
+.searchBar input, .loop {
+    border: 1px rgb(68, 68, 68) solid;
+}
+
+.searchBar input, .loop, .mic {
+    padding-block: 0.6rem;
+}
+
+.searchBar input {
+    width: 35vw;
     background-color: black;
 }
 
@@ -25,6 +82,17 @@
 
 .mic {
     background-color: rgb(30, 30, 30);
+    padding-inline: 0.8rem;
+    border-radius: 50%;
+}
+
+.mic:hover {
+    background-color: rgb(48, 48, 48);
+}
+
+/* profile */
+.profile {
+    gap: 1rem;
 }
 
 .profilePic {
