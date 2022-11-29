@@ -1,0 +1,35 @@
+.container, .search, .searchBar, .profile {
+    display: flex;
+}
+
+.container {
+    justify-content: space-between;
+}
+
+.menu span {
+    color: white;
+}
+
+.menu span::after {
+    content: 'FR';
+}
+
+.searchBar input {
+    width: 30vw;
+    background-color: black;
+}
+
+.loop {
+    background-color: rgb(47, 47, 47);
+}
+
+.mic {
+    background-color: rgb(30, 30, 30);
+}
+
+.profilePic {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: brown;
+}
