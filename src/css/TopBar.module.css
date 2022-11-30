@@ -2,14 +2,27 @@
     display: flex;
     background-color: rgb(47, 47, 47);
     justify-content: space-between;
+    padding-block: 0.2rem;
 }
 
 .topBarItem {
     display: flex;
-    align-items: center;
     gap: 0.7rem;
 }
 
-.dash {
-    align-self: flex-end;
+.itemContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+}
+
+.itemContainer.dash {
+    align-items: flex-end;
+}
+
+.itemContainer:hover {
+    background-color: rgb(67, 67, 67);
+    cursor: pointer;
+    border-radius: 50%;
 }
