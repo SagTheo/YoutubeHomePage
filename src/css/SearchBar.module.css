@@ -32,6 +32,19 @@
     align-items: center;
 }
 
+.loop:hover::after, 
+.mic:hover::after,
+.camera:hover::after,
+.bell:hover::after {
+    position: absolute;
+    top: 90px;
+    color: white;
+    background-color: rgb(80, 80, 80);
+    padding: 0.7rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+}
+
 /* menu */
 .burger {
     margin-right: 1rem;
@@ -74,6 +87,8 @@
 .searchBar input {
     width: 35vw;
     background-color: black;
+    outline: none;
+    color: white;
 }
 
 .loop {
@@ -90,6 +105,15 @@
     background-color: rgb(48, 48, 48);
 }
 
+.loop:hover::after {
+    content: 'Search';
+}
+
+.mic:hover::after {
+    content: 'Search with your voice';
+    right: 365px;
+}
+
 /* profile */
 .profile {
     gap: 1rem;
@@ -100,4 +124,14 @@
     height: 35px;
     border-radius: 50%;
     background-color: brown;
+}
+
+.camera:hover::after {
+    content: 'Create';
+    right: 112px;
+}
+
+.bell:hover::after {
+    content: 'Notifications';
+    right: 40px;
 }

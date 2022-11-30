@@ -1,6 +1,9 @@
 import React from 'react'
 import styles from '../css/SearchBar.module.css'
 
+// Need to add little text cards when hovering over some icons 
+// Click event on burger to display side bar
+
 const SearchBar = () => {
   return (
     <div className={styles.container}>
