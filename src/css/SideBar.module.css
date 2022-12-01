@@ -1,5 +1,13 @@
 .container {
-    width: calc(100vw / 6);
+    width: fit-content;
     height: 100vh;
-    background-color: grey;
+    padding-left: 0.75rem;
+    background-color: black;
+}
+
+.separator {
+    border-color: rgb(47, 47, 47);
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    margin-block: 0.5rem;
 }
