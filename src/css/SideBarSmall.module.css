@@ -1,5 +1,24 @@
 .container {
-    background-color: grey;
+    background-color: black;
     height: 100vh;
-    width: calc(100vw / 18);
+    width: fit-content;
+}
+
+.iconContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    padding-block: 1rem;
+    border-radius: 10px;
+}
+
+.iconContainer:hover {
+    background-color: rgb(47, 47, 47);
+    cursor: pointer;
+}
+
+.iconContainer span {
+    color: white;
+    font-size: 0.7rem;
 }
