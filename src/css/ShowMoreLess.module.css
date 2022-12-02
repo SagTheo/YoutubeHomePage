@@ -17,11 +17,3 @@
     color: white;
     font-size: 0.9rem;
 }
-
-.show {
-    display: flex;
-}
-
-.hidden {
-    display: none;
-}
