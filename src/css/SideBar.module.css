@@ -11,3 +11,8 @@
     border-style: solid;
     margin-block: 0.5rem;
 }
+
+.sideBarTitle {
+    color: white;
+    padding-left: 0.75rem;
+}
