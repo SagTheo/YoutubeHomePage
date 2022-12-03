@@ -3,6 +3,9 @@ import styles from '../css/SideBar.module.css'
 import { topIcons } from '../icons/sideBarTopIcons'
 import { secondBlock } from '../icons/sideBarSecondBlock'
 import { thirdBlock } from '../icons/sideBarThirdBlock'
+import { fourthBlock } from '../icons/sideBarFourthBlock'
+import { fifthBlock } from '../icons/sideBarFifthBlock'
+import { lastBlock } from '../icons/sideBarLastBlock'
 import SideBarIcon from './SideBarIcon'
 import ShowMoreLess from './ShowMoreLess'
 import SideBarYoutuber from './SideBarYoutuber'
@@ -93,8 +96,43 @@ const SideBar = () => {
         null
       }
       <div className={styles.separator}></div>
+      {/* Fourth block */}
+      <span className={styles.sideBarTitle}>Explore</span>
+      {
+        fourthBlock.map(icon => {
+          return (
+            <SideBarIcon icon={icon.icon}
+                         title={icon.title}
+                         show={true}
+            />
+          )
+        })
+      }
       <div className={styles.separator}></div>
+      {/* Fifth block */}
+      <span className={styles.sideBarTitle}>More from Youtube</span>
+      {
+        fifthBlock.map(icon => {
+          return (
+            <SideBarIcon icon={icon.icon}
+                         title={icon.title}
+                         show={true} 
+            />
+          )
+        })
+      }
       <div className={styles.separator}></div>
+      {/* Last block */}
+      {
+        lastBlock.map(icon => {
+          return (
+            <SideBarIcon icon={icon.icon}
+                         title={icon.title}
+                         show={true}
+            />
+          )
+        })
+      }
       <div className={styles.separator}></div>
     </div>
   )
