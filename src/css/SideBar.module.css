@@ -18,3 +18,37 @@
     padding-left: 0.75rem;
     margin-bottom: 0.4rem;
 }
+
+.linksContainer {
+    width: calc(100vw / 7 - 20px);
+    padding-left: 0.75rem;
+}
+
+.llc {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.llc svg {
+    margin-right: 0.5rem;
+}
+
+.llc span {
+    color: white;
+    font-size: 0.8rem;
+}
+
+.linksContainer div {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.link {
+    text-decoration: none;
+    color: rgb(188, 188, 188);
+    font-size: 0.85rem;
+    margin-right: 0.3rem;
+    margin-bottom: 0.3rem;
+}
