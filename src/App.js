@@ -2,7 +2,9 @@ import { useState } from "react";
 import SearchBar from "./components/SearchBar";
 import SideBar from "./components/SideBar";
 import SideBarSmall from "./components/SideBarSmall";
+import SuggestionsBar from "./components/SuggestionsBar";
 import TopBar from "./components/TopBar";
+import styles from './css/App.module.css'
 
 
 function App() {
@@ -12,9 +14,12 @@ function App() {
     <>
       <TopBar />
       <SearchBar toggleSideBar={setDisplaySideBar} displaySideBar={displaySideBar} />
-      {
-        displaySideBar ? <SideBar /> : <SideBarSmall />
-      }
+      <div className={styles.mainContent}>
+        {
+          displaySideBar ? <SideBar /> : <SideBarSmall />
+        }
+        <SuggestionsBar />  
+      </div>
     </>
   );
 }
