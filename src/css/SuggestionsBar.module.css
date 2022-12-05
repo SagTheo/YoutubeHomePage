@@ -1,6 +1,9 @@
 .linksContainer {
-    
+    margin-left: 1.5rem;
+    height: fit-content;
+    overflow-x: scroll;
 }
+
 
 .link {
 
