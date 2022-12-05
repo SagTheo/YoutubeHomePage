@@ -1,3 +1,4 @@
 .mainContent {
-    display: flex;
+    display: grid;
+    grid-template-columns: max-content 1fr;
 }
