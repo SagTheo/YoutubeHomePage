@@ -1,10 +1,23 @@
-.linksContainer {
+.container {
     margin-left: 1.5rem;
-    height: fit-content;
+    width: calc(100% - 1.5rem);
+    height: 3rem;
     overflow-x: scroll;
+    
+}
+
+.linksContainer {
+    display: flex;
+    width: max-content;
 }
 
 
 .link {
-
+    display: block;
+    color: white;
+    background-color: rgb(50, 50, 50);
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin-inline: 0.4rem;
+    text-decoration: none;
 }
