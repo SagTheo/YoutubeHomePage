@@ -38,6 +38,7 @@
 .camera:hover::after,
 .bell:hover::after {
     position: absolute;
+    z-index: 1;
     top: 90px;
     color: white;
     background-color: rgb(80, 80, 80);
