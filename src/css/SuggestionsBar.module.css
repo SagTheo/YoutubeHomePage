@@ -1,14 +1,17 @@
 .container {
     margin-left: 1.5rem;
     width: calc(100% - 1.5rem);
-    height: 3rem;
     overflow-x: scroll;
-    
+}
+
+.container::-webkit-scrollbar {
+    display: none;
 }
 
 .linksContainer {
     display: flex;
     width: max-content;
+    position: relative;
 }
 
 
@@ -16,8 +19,29 @@
     display: block;
     color: white;
     background-color: rgb(50, 50, 50);
-    border-radius: 5px;
+    border-radius: 8px;
     padding: 0.5rem;
     margin-inline: 0.4rem;
     text-decoration: none;
+}
+
+.link:hover {
+    background-color: rgb(85, 85, 85);
+}
+
+.arrow {
+    display: none;
+    position: absolute;
+    background-color: black;
+    height: 100%;
+}
+
+/* Doesn't work -> Need to use state to display arrow when hovering links container ? */
+.arrow:hover {
+    display: flex;
+    align-items: center;
+}
+
+.arrowRight {
+    right: 0;
 }
