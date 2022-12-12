@@ -32,15 +32,29 @@
 
 .arrow {
     display: none;
-    align-items: center;
-    /* position: absolute; */
     background-color: black;
-    height: 100%;
+    height: 35.2px;
+    width: fit-content;
+}
+
+.insideContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background-color: black;
+    height: 35.2px;
+    width: 35.2px;
+    box-shadow: 20px 0px 10px 5px black;
+}
+
+.insideContainer:hover {
+    background-color: rgb(85, 85, 85);
+    border-radius: 50%;
 }
 
 .arrowShown {
-    display: flex;
-    position: fixed; /* Needs work */
+    display: block;
 }
 
 .arrowShown:hover {
