@@ -50,6 +50,18 @@
     border-radius: 50%;
 }
 
+.arrow:hover::after {
+    content: 'Previous';
+    position: absolute;
+    z-index: 1;
+    top: 40px;
+    color: white;
+    background-color: rgb(80, 80, 80);
+    padding: 0.7rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+}
+
 .arrowShown {
     display: flex;
 }
