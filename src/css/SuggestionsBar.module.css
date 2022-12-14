@@ -34,29 +34,22 @@
     display: none;
     background-color: black;
     height: 35.2px;
-    width: fit-content;
-}
-
-.insideContainer {
-    display: flex;
     align-items: center;
     justify-content: center;
     position: fixed;
-    background-color: black;
-    height: 35.2px;
-    width: 35.2px;
     box-shadow: 20px 0px 10px 5px black;
 }
 
-.insideContainer:hover {
+.arrow svg {
+    padding: 5px;
+}
+
+.arrow svg:hover {
+    cursor: pointer;
     background-color: rgb(85, 85, 85);
     border-radius: 50%;
 }
 
 .arrowShown {
-    display: block;
-}
-
-.arrowShown:hover {
-    cursor: pointer;
+    display: flex;
 }
