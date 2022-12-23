@@ -16,26 +16,30 @@ function App() {
     <>
       <TopBar />
       <SearchBar toggleSideBar={setDisplaySideBar} displaySideBar={displaySideBar} />
-      <div className={styles.mainContent}>
+      <div className={styles.main}>
         {
           displaySideBar ? <SideBar /> : <SideBarSmall />
         }
-        <SuggestionsBar />  
-        {
-          youtubeCards.map(card => {
-            return (
-              <YoutubeCard  thumbnailPic={card.thumbnailPic} 
-                      thumbnailAlt={card.thumbnailAlt} 
-                      videoDuration={card.videoDuration}
-                      profilePic={card.profilePic} 
-                      profileAlt={card.profileAlt} 
-                      title={card.title}
-                      youtuber={card.youtuber}
-                      videoStats={card.videoStats}
-              />
-            )
-          })
-        }
+        <div className={styles.mainContent}>
+          <SuggestionsBar /> 
+          <div className={styles.cards}>
+            {
+              youtubeCards.map(card => {
+                return (
+                  <YoutubeCard  thumbnailPic={card.thumbnailPic} 
+                          thumbnailAlt={card.thumbnailAlt} 
+                          videoDuration={card.videoDuration}
+                          profilePic={card.profilePic} 
+                          profileAlt={card.profileAlt} 
+                          title={card.title}
+                          youtuber={card.youtuber}
+                          videoStats={card.videoStats}
+                  />
+                )
+              })
+            } 
+          </div> 
+        </div>
       </div>
     </>
   );
