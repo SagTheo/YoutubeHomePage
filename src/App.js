@@ -22,7 +22,7 @@ function App() {
         }
         <div className={styles.mainContent}>
           <SuggestionsBar /> 
-          <div className={styles.cards}>
+          {/* <div className={styles.cards}>
             {
               youtubeCards.map(card => {
                 return (
@@ -38,7 +38,7 @@ function App() {
                 )
               })
             } 
-          </div> 
+          </div>  */}
         </div>
       </div>
     </>

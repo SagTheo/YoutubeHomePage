@@ -1,7 +1,8 @@
 .container {
-    /* width: calc(100% - 1.5rem); */
+    /* width: calc(100% - 1.5rem);
+    margin-left: 1.5rem; */
     height: fit-content;
-    overflow-x: scroll;
+    /* overflow-x: scroll; */
     margin-bottom: 1.5rem;
 }
 
