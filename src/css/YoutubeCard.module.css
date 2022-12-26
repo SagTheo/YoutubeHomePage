@@ -1,18 +1,27 @@
 .container {
-    background-color: white;
     width: fit-content;
 }
 
 .thumbnail {
+    position: relative;
+}
 
+.thumbnail img {
+    border-radius: 10px;
 }
 
 .videoDuration {
-
+    background-color: black;
+    color: white;
+    width: fit-content;
+    padding-inline: 3px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
 }
 
 .thumbnailInfo {
-
+    display: flex;
 }
 
 .profilePic {
@@ -20,5 +29,5 @@
 }
 
 .videoInfo {
-
+    color: white;
 }

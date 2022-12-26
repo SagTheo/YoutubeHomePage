@@ -1,9 +1,9 @@
 export const youtubeCards = [
     {
-        thumbnailPic: '', 
+        thumbnailPic: 'https://picsum.photos/300/200', 
         thumbnailAlt: 'test', 
         videoDuration: '3:00',
-        profilePic: '',
+        profilePic: 'https://picsum.photos/30',
         profileAlt: 'test',
         title: 'Test',
         youtuber: 'test',
