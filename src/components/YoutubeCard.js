@@ -18,8 +18,8 @@ const YoutubeCard = ({thumbnailPic,
         <div className={styles.thumbnailInfo}>
             <img src={profilePic} alt={profileAlt} className={styles.profilePic} />
             <div className={styles.videoInfo}>
-                <p>{title}</p>
-                <p>{youtuber}</p>
+                <span>{title}</span>
+                <span>{youtuber}</span>
                 <span>{videoStats.views} views {videoStats.postedAt}</span>
             </div>
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" className="bi bi-three-dots-vertical" viewBox="0 0 16 16">

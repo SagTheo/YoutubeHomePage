@@ -4,6 +4,8 @@
 
 .thumbnail {
     position: relative;
+    z-index: -1;
+    margin-bottom: 0.5rem;
 }
 
 .thumbnail img {
@@ -22,12 +24,16 @@
 
 .thumbnailInfo {
     display: flex;
+    justify-content: space-between;
 }
 
 .profilePic {
-    
+    border-radius: 50%;
+    height: 40px;
 }
 
 .videoInfo {
     color: white;
+    display: flex;
+    flex-direction: column;
 }

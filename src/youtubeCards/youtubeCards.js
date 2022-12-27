@@ -3,7 +3,7 @@ export const youtubeCards = [
         thumbnailPic: 'https://picsum.photos/300/200', 
         thumbnailAlt: 'test', 
         videoDuration: '3:00',
-        profilePic: 'https://picsum.photos/30',
+        profilePic: 'https://picsum.photos/40',
         profileAlt: 'test',
         title: 'Test',
         youtuber: 'test',

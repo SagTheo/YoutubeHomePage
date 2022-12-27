@@ -53,7 +53,6 @@
 .arrow:hover::after {
     content: 'Previous';
     position: absolute;
-    z-index: 1;
     top: 40px;
     color: white;
     background-color: rgb(80, 80, 80);
