@@ -1,5 +1,5 @@
 .container {
-    width: fit-content;
+    width: 300px;
 }
 
 .thumbnail {
@@ -23,8 +23,8 @@
 }
 
 .thumbnailInfo {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: max-content 1fr max-content;
 }
 
 .profilePic {
@@ -36,4 +36,14 @@
     color: white;
     display: flex;
     flex-direction: column;
+    padding-left: 0.5rem;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.grey {
+    color: grey;
 }
