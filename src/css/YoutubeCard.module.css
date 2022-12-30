@@ -16,10 +16,12 @@
     background-color: black;
     color: white;
     width: fit-content;
-    padding-inline: 3px;
+    padding-inline: 4px;
     position: absolute;
     right: 10px;
     bottom: 10px;
+    border-radius: 4px;
+    font-size: 0.9rem;
 }
 
 .thumbnailInfo {
@@ -44,6 +46,11 @@
     align-items: center;
 }
 
+.videoInfoTitle {
+    margin-bottom: 0.3rem;
+}
+
 .grey {
     color: grey;
+    font-size: 0.9rem;
 }

@@ -18,7 +18,7 @@ const YoutubeCard = ({thumbnailPic,
       <div className={styles.thumbnailInfo}>
           <img src={profilePic} alt={profileAlt} className={styles.profilePic} />
           <div className={styles.videoInfo}>
-              <span>{title}</span>
+              <span className={styles.videoInfoTitle}>{title}</span>
               <span className={styles.grey}>{youtuber}</span>
               <span className={`${styles.grey} ${styles.flex}`}>
                 {videoStats.views} views

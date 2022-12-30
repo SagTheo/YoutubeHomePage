@@ -3,6 +3,7 @@
     height: fit-content;
     overflow-x: scroll;
     margin-bottom: 1.5rem;
+    /* position: fixed; */
 }
 
 .container::-webkit-scrollbar {
