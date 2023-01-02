@@ -2,8 +2,9 @@
     width: 100%;
     height: fit-content;
     overflow-x: scroll;
-    margin-bottom: 1.5rem;
-    /* position: fixed; */
+    padding-bottom: 0.7rem;
+    position: fixed;
+    background-color: black;
 }
 
 .container::-webkit-scrollbar {
